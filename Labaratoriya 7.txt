@@ -1,0 +1,99 @@
+#labaratorniy 7
+
+
+#7.1
+# hashes = ('abc123', 'ffd222', '9af010', 'ffd222')
+# print(hashes.count('ffd222'))
+
+
+#7.2
+# users = ('guest', 'moderator', 'admin', 'root')
+# print(users.index('admin'))
+
+
+#7.3
+# key_params = ("AES", 256, "CBC")
+# algorithm, key_size, mode = key_params
+# print('alqoritm', algorithm)
+# print('key_size', key_size,)
+# print('mode', mode)
+
+
+#7.4
+# log = ('login', 'download', 'upload', 'logout')
+# a = len(log) - 1
+# print(log[a])
+
+
+#7.5
+# ip = input('vvedite ip: ')
+# ips = ('192.168.0.1', '10.0.0.2', '172.16.0.3')
+# if ips.count(ip) == 1:
+#     print('naydeno')
+# else:
+#     print('net v spiske')
+
+
+#7.6
+# ima = input()
+# rol = input()
+# status = input()
+# a = (ima, rol, status)
+# print(a)
+
+
+#7.7
+# a = ('read', 'write', 'execute')
+# b = input()
+# c = (a[0], b, a[2])
+# print(c)
+
+
+#7.8
+# a = ('success', 'fail', 'fail', 'success', 'fail', 'fail' )
+# b = a.count('success')
+# c = a.count('fail')
+# print('success count:', b)
+# print('fail count:', c)
+
+
+#7.9
+# admins = ('root', 'admin')
+# users = ('alex', 'bob')
+# c = admins + users
+# print(c)
+
+
+#7.10
+# logs = ('login', ('upload', 'download'), 'logout')
+# start = logs[0]
+# midle = logs[1]
+# end = logs[2]
+# print(start, midle, end , sep='\n')
+
+
+# 1) В списке можно менять элементы, добавлять, удалять. В кортеже после создания ничего изменить нельзя
+# 
+# 2) Потому что они неизменяемые. Если ты передаёшь кортеж в функцию или между частями программы, его никто случайно не сможет изменить, что снижает риск ошибок и вредоносных изменений.
+# 
+# 3) Кортеж — immutable. Но можно создать новый кортеж, например.
+# 
+# 4) Упаковка (packing)
+#  Мы собираем несколько значений в один кортеж:
+#  t = 1, 2, 3
+# 
+#  Распаковка (unpacking)
+#  Мы разбираем кортеж на отдельные переменные:
+#  a, b, c = (1, 2, 3)
+# 
+# 5) count(value)--Считает, сколько раз значение встречается в кортеже. index(value)--Возвращает первую позицию, на которой встречается элем.
+# 
+#  6) Да. Python понимает кортеж по запятым, а не по скобкам:
+#  t = 1, 2, 3
+#  print(type(t))  # tuple
+# 
+# 7) Кортежи используют потому, что они надёжные и неизменяемые.
+# > хранение констант, которые нельзя менять (роли, уровни доступа);
+# > передача чувствительных данных, которые не должны быть изменены в процессе;
+# > хранение настроек, ключей или параметров, которые должны быть зафиксированы;
+# > предотвращение атак, где злоумышленник пытается изменить список во время выполнения программы.
